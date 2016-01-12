@@ -15,7 +15,7 @@
 <%@page import="java.io.BufferedReader"%>
 <%@page import="java.io.BufferedReader"%>
 <%@page import="java.io.InputStream"%>
-<%@ page errorPage="error.jsp" %>
+<%@ page errorPage="../error/error.jsp" %>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -45,6 +45,9 @@
             if (!file.exists())
             {
                 out.print("Welcome. Let us install this application together");
+                out.print("<form method=post action='install.html'>");
+                out.print("<input type='submit' value='Begin Installation'>");
+                out.print("</form>");
             }
             else
             {

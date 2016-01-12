@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        Using MySQL:
+        <form action="configure.jsp" method="POST">
+            Database Host: <input required type="text" name="dbhost" value="localhost"><br />
+            Database Port: <input required type="text" name="dbport" value="3306"><br />
+            Database Name: <input required type="text" name="dbname" value="smssync"><br />
+            Database User: <input required type="text" name="user"><br />
+            Database Pass: <input required type="password" name="password"><br />
+            <br /><br />
+            <input type="submit" value="Install">
+            <input type="reset">
+        </form>
+    </body>
+</html>
